@@ -15,7 +15,7 @@ class MainView extends Component {
 
 
     static navigationOptions = {
-        title: 'MainView',
+        title: 'Dream',
     }
 
 
@@ -37,31 +37,8 @@ class MainView extends Component {
 
                 <View style={{height:8}}/>
 
-                <Button onPress={() => this.toOther("Sign")} title="签到"/>
+                <Button onPress={() => this.toOther("Study")} title="学习"/>
 
-                <View style={{height:8}}/>
-
-                <Button onPress={() => this.toOther("Profile")} title="个人资料"/>
-
-                <View style={{height:8}}/>
-
-                <Button onPress={() => this.toOther("Community")} title="社区"/>
-
-                <View style={{height:8}}/>
-
-                <Button onPress={() => this.toOther("Feedback")} title="意见反馈"/>
-
-                <View style={{height:8}}/>
-
-                <Button onPress={() => this.toOther("District")} title="我的小区"/>
-
-                <View style={{height: 8}}/>
-
-                <Button onPress={() => this.toOther("Posting")} title="发帖"/>
-
-                <View style={{height: 8}}/>
-
-                <Button onPress={() => this.toOther("Contact")} title="通讯录"/>
 
             </View>
 

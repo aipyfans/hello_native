@@ -27,16 +27,20 @@ export default class SplashView extends Component {
         }, 2000);
     }
 
+
     componentWillUnMount() {
         this.timer && clearTimeout(this.timer);
     }
 
 
     render() {
+
         let {theme} = this.props.screenProps;
+
         return (
             <View style={[theme.bg, theme.splash_root]}>
-                <Text style={theme.s1c1}>Welcome to Gtedx.</Text>
+                <Text style={theme.s1c3}>William, Dream...</Text>
+                <Text style={theme.s1c3}>为了梦, 追梦...</Text>
             </View>
         );
     }

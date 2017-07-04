@@ -3,12 +3,17 @@ import {StackNavigator, TabNavigator, DrawerNavigator, TabBarBottom} from 'react
 // 闪屏页面
 import SplashView from '../components/splash/SplashView';
 
+// 登录页面
+import LoginView from '../components/login/LoginView';
+
 // 主页面
 import MainView from '../components/main/MainView.js';
 
+//---------------------------------------------------------------------------------------
 
 const routeConfigs = {
     Splash: {screen: SplashView},
+    Login: {screen: LoginView},
     Main: {screen: MainView},
 }
 
