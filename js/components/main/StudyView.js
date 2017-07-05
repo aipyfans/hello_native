@@ -1,23 +1,25 @@
 'use strict';
 
 import React, {Component}from 'react';
-import {View, Button,} from 'react-native';
+import {View, Button,Image} from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-import * as Actions from '../../actions';
 import {connect} from 'react-redux';
 
 
 /**
- * 用户登录页面.
+ * TODO.
  * Created by william on 17-2-14.
  */
-class MainView extends Component {
+class StudyView extends Component {
 
 
     static navigationOptions = {
-        title: 'Dream',
-    }
-
+        drawerLabel: '学习',
+        drawerIcon: ({ tintColor }) => (
+            <Icon name="ios-compass" size={24} color={tintColor} />
+        ),
+    };
 
     constructor(props) {
         super(props)
@@ -35,11 +37,6 @@ class MainView extends Component {
         return (
             <View style={[theme.bg]}>
 
-                <View style={{height:8}}/>
-
-                <Button onPress={() => this.toOther("Study")} title="学习"/>
-
-
             </View>
 
         );
@@ -54,4 +51,4 @@ function mapStateToProps(state) {
 
 }
 
-export default connect(mapStateToProps)(MainView);
+export default connect(mapStateToProps)(StudyView);

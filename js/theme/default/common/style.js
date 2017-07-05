@@ -10,7 +10,6 @@ export default StyleSheet.create( {
     bg: {
         flex: 1,
         backgroundColor: "#F6F6F6",
-        paddingHorizontal:8
     },
 
     row: {

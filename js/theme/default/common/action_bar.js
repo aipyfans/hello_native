@@ -7,7 +7,8 @@ import {StyleSheet,PixelRatio} from 'react-native';
 export default StyleSheet.create({
 
     ab_bar: {
-
+        height:48,
+        backgroundColor:'#518cdc',
     },
 
 
@@ -16,5 +17,9 @@ export default StyleSheet.create({
         color:'white',
         paddingHorizontal:16
     },
+
+    ab_menu:{
+        paddingHorizontal:16
+    }
 
 });

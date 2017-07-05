@@ -15,4 +15,12 @@ export default StyleSheet.create({
         height:24,
     },
 
+    sm_avatar: {
+        width:96,
+        height:96,
+        borderRadius:48,
+        margin:8,
+        alignSelf:'center',
+    },
+
 });

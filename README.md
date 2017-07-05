@@ -121,7 +121,7 @@
 | ActionSheet |  https://github.com/xgfe/react-native-ui-xg/tree/master/components/ActionSheet | ActionSheet |
 | popup-dialog | https://github.com/jacklam718/react-native-popup-dialog | popup-dialog
 | modal-datetime-picker | https://github.com/mmazzarolo/react-native-modal-datetime-picker | react-native-modal-datetime-picker
-
+| react-native-vector-icons | https://github.com/oblador/react-native-vector-icons | react-native-vector-icons
 
 【功能库】
 

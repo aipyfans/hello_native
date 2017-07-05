@@ -11,8 +11,8 @@ export default StyleSheet.create({
     },
 
     tb_icon: {
-        width:24,
-        height:24,
+        fontSize:32,
     },
+
 
 });
