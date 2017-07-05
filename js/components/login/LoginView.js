@@ -30,9 +30,8 @@ class LoginView extends Component {
         super(props)
         this.state = {
             isHidePwd: true,
-            username: 'trainer_test',
-            password: '123456',
-            isTheme: true
+            username: 'William',
+            password: 'dream',
         }
     }
 

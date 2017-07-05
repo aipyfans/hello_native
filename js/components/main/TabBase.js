@@ -3,8 +3,13 @@
  * React Native Base.
  */
 import React, {Component}from 'react';
-import {View, Image} from 'react-native';
+import {ScrollView, TouchableOpacity, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+
+const routes = [
+    {routeName: 'William'},
+    {routeName: 'Dream'},
+];
 
 export default class TabBase extends Component {
 
@@ -23,17 +28,25 @@ export default class TabBase extends Component {
         }
     };
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 
 
     render() {
         let {theme} = this.props.screenProps;
         return (
-            <View style={[theme.bg]}>
-
-            </View>
+            <ScrollView style={[theme.bg]}>
+                {
+                    routes.map((route) => {
+                        return (
+                            <TouchableOpacity activeOpacity={0.75} style={theme.btn}>
+                                <Text style={{color:'white'}}>{route.routeName}</Text>
+                            </TouchableOpacity>
+                        );
+                    })
+                }
+            </ScrollView>
         );
     }
 

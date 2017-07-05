@@ -35,6 +35,15 @@ export default StyleSheet.create( {
         height:18,
     },
 
+    btn: {
+        borderRadius:4,
+        backgroundColor:"#518cdc",
+        padding:8,
+        margin:8,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+
 
     /**
      * 根据UI设计师的规范定义一套风格.

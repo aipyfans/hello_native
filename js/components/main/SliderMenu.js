@@ -3,7 +3,7 @@
  * 闪屏欢迎页面.
  */
 import React, {Component}from 'react';
-import {View, Image} from 'react-native';
+import {View, Image,Text} from 'react-native';
 import {DrawerItems} from 'react-navigation';
 
 const avatarUrl = "https://raw.githubusercontent.com/li-jun-bo/DreamImage/master/Avatar/avatar_one.jpg";
@@ -21,7 +21,10 @@ export default class SliderMenu extends Component {
 
         return (
             <View style={[theme.flex_one, theme.bg]}>
-                <Image style={theme.sm_avatar} source={{uri:avatarUrl}} />
+                <View style={[theme.columnV]}>
+                    <Image style={theme.sm_avatar} source={{uri:avatarUrl}} />
+                    <Text style={{marginBottom:8}}>静水流深</Text>
+                </View>
                 <DrawerItems {...this.props} />
             </View>
         );

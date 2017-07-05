@@ -9,8 +9,8 @@ import SplashView from '../components/splash/SplashView';
 // 登录页面
 import LoginView from '../components/login/LoginView';
 
-// 主页面
-import StudyView from '../components/main/StudyView';
+import StudyView from '../components/main/menu/StudyView';
+import BlogView from '../components/main/menu/BlogView';
 
 // 主页面
 import TabBase from '../components/main/TabBase';
@@ -75,6 +75,10 @@ const SliderTabView = DrawerNavigator(
 
         StudyView: {
             screen: StudyView,
+        },
+
+        BlogView: {
+            screen: BlogView,
         }
 
     },
