@@ -1,11 +1,13 @@
 'use strict';
 
-import React, {Component}from 'react';
-import {View, Button,Image} from 'react-native';
+import React, {Component} from 'react';
+import {ScrollView, TouchableOpacity, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-
 import {connect} from 'react-redux';
 
+const routes = [
+    {componentName: 'Node Events', routeName: 'Event',},
+];
 
 /**
  * TODO.
@@ -16,8 +18,8 @@ class StudyView extends Component {
 
     static navigationOptions = {
         drawerLabel: '学习',
-        drawerIcon: ({ tintColor }) => (
-            <Icon name="ios-compass" size={24} color={tintColor} />
+        drawerIcon: ({tintColor}) => (
+            <Icon name="ios-compass" size={24} color={tintColor}/>
         ),
     };
 
@@ -31,14 +33,22 @@ class StudyView extends Component {
     }
 
     render() {
-
-        const {theme} = this.props.screenProps;
-
+        let {theme} = this.props.screenProps;
         return (
-            <View style={[theme.bg]}>
-
-            </View>
-
+            <ScrollView style={[theme.bg]}>
+                {
+                    routes.map((route) => {
+                        return (
+                            <TouchableOpacity
+                                style={theme.btn}
+                                activeOpacity={0.75}
+                                onPress={() => this.toOther(route.routeName)}>
+                                <Text style={{color: 'white'}}>{route.componentName}</Text>
+                            </TouchableOpacity>
+                        );
+                    })
+                }
+            </ScrollView>
         );
     }
 

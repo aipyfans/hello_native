@@ -9,14 +9,16 @@ import SplashView from '../components/splash/SplashView';
 // 登录页面
 import LoginView from '../components/login/LoginView';
 
-import StudyView from '../components/main/menu/StudyView';
-import BlogView from '../components/main/menu/BlogView';
-
 // 主页面
 import TabBase from '../components/main/TabBase';
 import TabComponent from '../components/main/TabComponent';
 import TabApi from '../components/main/TabApi';
 import SliderMenu from '../components/main/SliderMenu';
+
+import BlogView from '../components/main/menu/BlogView';
+
+import StudyView from '../components/main/menu/StudyView';
+import EventView from '../components/study/node/EventView';
 
 //---------------------------------------------------------------------------------------
 
@@ -124,6 +126,7 @@ const routeConfigs = {
     Splash: {screen: SplashView},
     Login: {screen: LoginView},
     Main: {screen: SliderTabView},
+    Event: {screen: EventView},
 }
 
 const stackNavigatorConfig = {
