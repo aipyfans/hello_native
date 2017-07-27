@@ -15,6 +15,11 @@ import TabComponent from '../components/main/TabComponent';
 import TabApi from '../components/main/TabApi';
 import SliderMenu from '../components/main/SliderMenu';
 
+// 组件示例
+import ListView from '../components/component/ListView';
+import FlatListView from '../components/component/FlatListView';
+import SectionListView from '../components/component/SectionListView';
+
 import BlogView from '../components/main/menu/BlogView';
 
 import StudyView from '../components/main/menu/StudyView';
@@ -127,6 +132,9 @@ const routeConfigs = {
     Login: {screen: LoginView},
     Main: {screen: SliderTabView},
     Event: {screen: EventView},
+    ListView: {screen: ListView},
+    FlatList: {screen: FlatListView},
+    SectionList: {screen: SectionListView},
 }
 
 const stackNavigatorConfig = {

@@ -1,8 +1,4 @@
-/**
- * Created by william on 17-2-23.
- * 闪屏欢迎页面.
- */
-import React, {Component}from 'react';
+import React, {Component} from 'react';
 import {ScrollView, TouchableOpacity, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -45,7 +41,10 @@ const routes = [
     {routeName: 'WebView'},
 ];
 
-
+/**
+ * Created by william on 17-7-27.
+ * 组件示例列表.
+ */
 export default class TabComponent extends Component {
 
     static navigationOptions = ({navigation, screenProps}) => {
@@ -75,8 +74,12 @@ export default class TabComponent extends Component {
                 {
                     routes.map((route) => {
                         return (
-                            <TouchableOpacity activeOpacity={0.75} style={theme.btn}>
-                                <Text style={{color:'white'}}>{route.routeName}</Text>
+                            <TouchableOpacity
+                                key={route.routeName}
+                                style={theme.btn}
+                                activeOpacity={0.75}
+                                onPress={() => this.props.navigation.navigate(route.routeName)}>
+                                <Text style={{color: 'white'}}>{route.routeName}</Text>
                             </TouchableOpacity>
                         );
                     })
