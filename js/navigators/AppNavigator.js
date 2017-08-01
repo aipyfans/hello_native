@@ -24,6 +24,8 @@ import BlogView from '../components/main/menu/BlogView';
 
 import StudyView from '../components/main/menu/StudyView';
 import EventView from '../components/study/node/EventView';
+import DatabaseView from '../components/study/database/DatabaseView';
+
 
 //---------------------------------------------------------------------------------------
 
@@ -132,6 +134,7 @@ const routeConfigs = {
     Login: {screen: LoginView},
     Main: {screen: SliderTabView},
     Event: {screen: EventView},
+    Database: {screen: DatabaseView},
     ListView: {screen: ListView},
     FlatList: {screen: FlatListView},
     SectionList: {screen: SectionListView},

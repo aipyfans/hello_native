@@ -6,7 +6,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {connect} from 'react-redux';
 
 const routes = [
-    {componentName: 'Node Events', routeName: 'Event',},
+    {componentName: 'Node Events', routeName: 'Event'},
+    {componentName: 'Database Realm', routeName: 'Database'},
 ];
 
 /**
